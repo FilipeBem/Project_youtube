@@ -13,8 +13,15 @@ public class Main {
         a[0] = new Aluno("Pedro", 22, "M", "123");
         a[1] = new Aluno("Maria",19,"F","Ma");
 
-        System.out.println(v[0].toString());
-        System.out.println(a[0].toString());
+        Visualisacao vis[] = new Visualisacao[5];
+        vis[0] = new Visualisacao(a[0],v[0]);
+        System.out.println(vis[0].toString());
+        vis[1] = new Visualisacao(a[1],v[2]);
+        vis[0].avaliar(35.0f);
+        System.out.println(vis[1].toString());
+
+        //System.out.println(v[0].toString());
+        //System.out.println(a[0].toString());
 
     }
 }
